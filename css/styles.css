@@ -779,17 +779,14 @@ transition: background-color 250ms cubic-bezier(0.4, 0, 0.2, 1);
   background-color: var(--pressed-state-color);
 }
 
-/* subscribe-form
-
-subscribe-form-input
-
-subsribe-form-submit */
 
 .subscribe-form {
   margin-left: auto;
 }
 
 .subscribe-form-input {
+  
+  box-sizing: border-box;
   background-color: transparent;
   width: 264px;
   height: 40px;
@@ -802,7 +799,6 @@ font-size: 12px;
 line-height: 2;
 color: var(--white-background-color);
 padding: 8px 16px;
-margin-right: 24px;
 }
 
 .subscribe-form-input:focus{
@@ -830,13 +826,21 @@ color: var(--white-background-color);
   align-items: center;
 }
 
-.subscribe-form-submit {
-max-width: 165px;
-box-sizing: border-box;
+.subscribe-form-container {
+  display: flex;
+  gap: 24px;
+}
 
-display: inline-flex;
+.subscribe-form-submit {
+  cursor: pointer;
+min-width: 165px;
+height: 40px;
+box-sizing: border-box;
+border: none;
+
+display: flex;
+justify-content: center;
 align-items: center;
-gap: 16px;
 padding: 8px 24px;
 font-weight: 500;
 font-size: 16px;
@@ -855,6 +859,7 @@ transition: background-color 250ms cubic-bezier(0.4, 0, 0.2, 1);
 
 .telegram-icon {
   fill: var(--white-background-color);
+  margin-left: 16px;
 }
 
 

@@ -459,15 +459,19 @@
             </a></li>
           </ul>
         </div>
-        <form class="subscribe-form">
-          <label class="subscribe-form-desc" for="email">Subscribe</label>
-          <input class="subscribe-form-input" type="email" name="email" placeholder="E-mail" id="email">
-          <button class="subscribe-form-submit" type="submit">Subscribe
-            <svg class="telegram-icon" width="24" height="24">
-              <use href="./images/icons.svg#icon-telegram"></use>
-            </svg>
-          </button>
-        </form>
+        <div class="subscribe-form">
+          <p class="subscribe-form-desc">Subscribe</p>
+          <form class="subscribe-form-container">
+            <label class="subscribe-label">
+              <input class="subscribe-form-input" type="email" name="email" placeholder="E-mail" id="email">
+            </label>
+            <button class="subscribe-form-submit" type="submit">Subscribe
+              <svg class="telegram-icon" width="24" height="24">
+                <use href="./images/icons.svg#icon-telegram"></use>
+              </svg>
+            </button>
+          </form>
+        </div>
       </div>
     </footer>
     <div class="backdrop is-hidden" data-modal>
@@ -504,7 +508,7 @@
           </svg>
           </div>
           <label class="contact-form-field-desc" for="comment">Comment</label>
-          <textarea class="contact-form-comment" name="" id="comment" placeholder="Text input"></textarea>
+          <textarea class="contact-form-comment" name="comment" id="comment" placeholder="Text input"></textarea>
           
           <label class="privacy-desc" for="privacy">
             <input class="privacy-checkbox" type="checkbox" name="privacy" id="privacy" >
